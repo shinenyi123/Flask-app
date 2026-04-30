@@ -13,7 +13,10 @@ DATABASE_PATH = BASE_DIR / 'database' / 'students.db'
 
 # Excel file paths
 EXCEL_INPUT_DIR = BASE_DIR / 'excel_input'
-EXCEL_OUTPUT_DIR = BASE_DIR / 'excel_output'
+from pathlib import Path
+
+# Excel output directory ကို GitHub repo ထဲမှာ ဆောက်ထားမယ့် folder နဲ့ တိကျအောင် သတ်မှတ်ပါ
+EXCEL_OUTPUT_DIR = Path("excel_output")
 
 # Ensure output directory exists
 EXCEL_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
